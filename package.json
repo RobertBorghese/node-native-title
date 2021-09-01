@@ -1,0 +1,15 @@
+{
+  "name": "Node Native Title",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Robert Borghese",
+  "license": "GNU Lesser General Public License v3.0",
+  "dependencies": {
+    "nan": "latest",
+    "nw-gyp": "latest"
+  },
+  "scripts": {
+    "build": "nw-gyp clean configure build --arch=ia32 --target=0.33.3",
+    "test": "cd testing && \".\\nwjs\\nw.exe\" ."
+  }
+}
